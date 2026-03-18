@@ -50,5 +50,19 @@ import java.util.*
       }
       return heap;
     }
+    public static void heapSort(String[] arr){
+      int n = arr.length;
+
+      buildHeapBottomUp(arr);
+
+      for (int i = n - 1; i > 0; i--){
+        String temp = arr[0];
+        arr[0] = arr[i];
+        arr[i] = temp;
+
+        heapifyDown(arr, i, 0);
+      }
+    }
+    
     
   }
