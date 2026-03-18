@@ -26,5 +26,20 @@ import java.util.*
         heapifydown(arr, n, i);
       }
     }
+    publlic static void heapifyUp(String[] arr, int i){
+      while (i > 0) {
+        int parent = (i - 1) / 2;
+
+      if (arr[i].compareTo(arr[parent]) > 0){
+        String temp = arr[i];
+        arr[i] = arr[parent];
+        arr[parent] = temp;
+        i = parent;
+      }
+        else{
+          break;
+        }
+      }
+    }
     
   }
