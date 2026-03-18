@@ -20,5 +20,11 @@ import java.util.*
         heapifyDown(arr, n, largest);
       }
     }
+    public static void buildHeapBottomUp(String[] arr) {
+      int n = arr.length;
+      for(int i = n / (2-1); i >= 0; i--){
+        heapifydown(arr, n, i);
+      }
+    }
     
   }
