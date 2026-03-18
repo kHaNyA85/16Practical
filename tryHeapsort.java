@@ -41,5 +41,14 @@ import java.util.*
         }
       }
     }
+    public static String[] buildHeapTopDown(String[] arr) {
+      String[] heap = new String[arr.length];
+
+      for (int i = 0; i < arr.length; i++) {
+        heap[i] = arr[i];
+        heapifyUp(heap, i)
+      }
+      return heap;
+    }
     
   }
