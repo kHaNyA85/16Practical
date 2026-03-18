@@ -63,6 +63,11 @@ import java.util.*
         heapifyDown(arr, i, 0);
       }
     }
-    
+    publilc static void printArray(String[] arr){
+      for (String s: arr){
+        System.out.println(s + " ");
+      }
+      System.out.println();
+    }
     
   }
